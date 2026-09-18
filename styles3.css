@@ -1,0 +1,45 @@
+/* Shared look (from the Figma design) */
+:root {
+  --bg: #1A0A0A;
+  --text: #FFFFFF;
+  --muted: #D9CFCF;
+  --accent: #A8FF35;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--bg);
+  color: var(--text);
+  font-family: 'Montserrat', Arial, sans-serif;
+}
+
+.site-nav { background-color: var(--bg); padding: 20px 0; }
+.site-nav .navbar-brand { font-weight: 700; letter-spacing: 1px; }
+.site-nav .nav-link { color: var(--muted); margin-left: 12px; }
+.site-nav .nav-link:hover,
+.site-nav .nav-link.active { color: var(--accent); }
+
+.site-footer {
+  padding: 24px 0;
+  font-size: 14px;
+  color: var(--muted);
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+
+/* Inner pages */
+.page { flex: 1; padding: 60px 0; }
+.page-title { font-weight: 700; font-size: 44px; margin-bottom: 24px; }
+.page-lead { font-size: 18px; line-height: 1.7; max-width: 800px; color: var(--muted); margin-bottom: 48px; }
+.details h2 { font-size: 20px; font-weight: 600; color: var(--accent); margin-bottom: 12px; }
+.details p { color: var(--text); margin-bottom: 8px; }
+.details a { color: var(--text); }
+.details a:hover { color: var(--accent); }
+.details .col-md-4, .details .col-md-6 { margin-bottom: 32px; }
+
+@media (max-width: 768px) {
+  .page-title { font-size: 30px; }
+}
